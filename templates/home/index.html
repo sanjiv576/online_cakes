@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'css/custom/style.css' %}">
+    <script src="{% static 'js/custom/custom.js' %}"></script>
+</head>
+<body>
+    this is home page
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'school' %}">school project</a>
+</body>
+</html>

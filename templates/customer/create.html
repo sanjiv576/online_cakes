@@ -1,0 +1,14 @@
+<!-- note: action shows what after submit -->
+<form action="/customer/save" method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    customer name : <input type="text" name="fullname" />
+    customer address : <input type="text" name="address" />
+    Age: <input type="number" name ="age" />
+    <br><br>
+    Image: <input type="file" name="image" />
+    <input type="submit" value="save" />
+
+    <br>
+
+</form>
