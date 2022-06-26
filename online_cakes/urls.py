@@ -3,6 +3,7 @@
 
 from home import views
 from customer import views
+
 from django.urls import path, include
 
 urlpatterns = [
@@ -11,9 +12,6 @@ urlpatterns = [
     path("aboutUs", include("home.urls")),
     path("school", include("home.urls")),
     path("customer", include("customer.urls")),
-    
-    
-    
 ]
 
 

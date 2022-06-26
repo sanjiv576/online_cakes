@@ -1,0 +1,17 @@
+<form action="/customer/update/{{ data.id }}" method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    customer name : <input type="text" name="fullname" value="{{ data.fullname }}"/>
+    customer address : <input type="text" name="address" value="{{ data.address }}" />
+    Age: <input type="number" name ="age" value="{{ data.age }}"/>
+    <br><br>
+    Image: <input type="file" name="image" />
+    <img src="/{{ data.image }}" alt="">
+    <input type="submit" value="update" />
+
+    <br>
+
+</form>
+
+<br>
+<a href="/customer/showCustomer">back</a>

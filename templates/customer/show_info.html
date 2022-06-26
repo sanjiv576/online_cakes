@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2><a href="/customer/create">add customer</a></h2>
     <table>
         <thead>
             <tr>
@@ -15,6 +15,7 @@
             <th>Address</th>
             <th>Age</th>
             <th>Image</th>
+            <th>Action</th>
             </tr>
         </thead>
 
@@ -28,6 +29,7 @@
                         <!-- <td>{{ customer.image }}</td> -->
                         <!-- now showing image -->
                         <td> <img src="/{{ customer.image }} "  width="100"></td>
+                        <td><a href="/customer/edit/{{customer.id}}">Edit</a>  | <a href="/customer/delete/{{ customer.id }}">Delete</a></td>
                     </tr>
                 {% endfor %}
             
