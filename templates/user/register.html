@@ -1,0 +1,14 @@
+<h2>Register</h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    First name: <input type="text", name="firstName"/>
+    Last name: <input type="text", name="lastName"/>
+    Email : <input type="email", name="email"/>
+    Username: <input type="text", name="username"/>
+    Password: <input type="password", name="password"/>
+
+    <input type="submit" value="Register">
+    <br>
+    <a href="/user/login">Login</a>
+</form>

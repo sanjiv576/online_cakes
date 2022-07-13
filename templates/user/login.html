@@ -1,0 +1,13 @@
+<h2>Login </h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    
+    Username: <input type="text", name="username"/>
+    Password: <input type="password", name="password"/>
+
+    <input type="submit" value="Login">
+
+    <br>
+    Don't have an account ?<a href="/user/register">Signup</a> <br>
+</form>
